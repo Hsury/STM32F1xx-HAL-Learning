@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"wwdg\gpio.o"
+"wwdg\stm32f1xx_hal_msp.o"
+"wwdg\main.o"
+"wwdg\stm32f1xx_it.o"
+"wwdg\usart.o"
+"wwdg\wwdg.o"
+"wwdg\system_stm32f1xx.o"
+"wwdg\stm32f1xx_hal_gpio.o"
+"wwdg\stm32f1xx_hal_flash.o"
+"wwdg\stm32f1xx_hal_dma.o"
+"wwdg\stm32f1xx_hal_flash_ex.o"
+"wwdg\stm32f1xx_hal_rcc.o"
+"wwdg\stm32f1xx_hal_rcc_ex.o"
+"wwdg\stm32f1xx_hal_tim_ex.o"
+"wwdg\stm32f1xx_hal.o"
+"wwdg\stm32f1xx_hal_gpio_ex.o"
+"wwdg\stm32f1xx_hal_tim.o"
+"wwdg\stm32f1xx_hal_pwr.o"
+"wwdg\stm32f1xx_hal_uart.o"
+"wwdg\stm32f1xx_hal_cortex.o"
+"wwdg\stm32f1xx_hal_wwdg.o"
+"wwdg\startup_stm32f103xe.o"
+--library_type=microlib --nodebug --strict --scatter "WWDG\WWDG.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "WWDG.map" -o WWDG\WWDG.axf

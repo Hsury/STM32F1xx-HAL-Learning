@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"usart_printf\gpio.o"
+"usart_printf\stm32f1xx_hal_msp.o"
+"usart_printf\main.o"
+"usart_printf\stm32f1xx_it.o"
+"usart_printf\usart.o"
+"usart_printf\system_stm32f1xx.o"
+"usart_printf\stm32f1xx_hal_gpio.o"
+"usart_printf\stm32f1xx_hal_flash.o"
+"usart_printf\stm32f1xx_hal_dma.o"
+"usart_printf\stm32f1xx_hal_flash_ex.o"
+"usart_printf\stm32f1xx_hal_rcc.o"
+"usart_printf\stm32f1xx_hal_rcc_ex.o"
+"usart_printf\stm32f1xx_hal_tim_ex.o"
+"usart_printf\stm32f1xx_hal.o"
+"usart_printf\stm32f1xx_hal_gpio_ex.o"
+"usart_printf\stm32f1xx_hal_tim.o"
+"usart_printf\stm32f1xx_hal_pwr.o"
+"usart_printf\stm32f1xx_hal_uart.o"
+"usart_printf\stm32f1xx_hal_cortex.o"
+"usart_printf\startup_stm32f103xe.o"
+--library_type=microlib --nodebug --strict --scatter "USART_printf\USART_printf.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "USART_printf.map" -o USART_printf\USART_printf.axf

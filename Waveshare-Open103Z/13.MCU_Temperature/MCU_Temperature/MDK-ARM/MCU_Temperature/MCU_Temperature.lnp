@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"mcu_temperature\startup_stm32f103xe.o"
+"mcu_temperature\system_stm32f1xx.o"
+"mcu_temperature\adc.o"
+"mcu_temperature\gpio.o"
+"mcu_temperature\stm32f1xx_it.o"
+"mcu_temperature\stm32f1xx_hal_msp.o"
+"mcu_temperature\main.o"
+"mcu_temperature\usart.o"
+"mcu_temperature\stm32f1xx_hal_adc.o"
+"mcu_temperature\stm32f1xx_hal_tim_ex.o"
+"mcu_temperature\stm32f1xx_hal_uart.o"
+"mcu_temperature\stm32f1xx_hal_gpio.o"
+"mcu_temperature\stm32f1xx_hal_flash_ex.o"
+"mcu_temperature\stm32f1xx_hal_adc_ex.o"
+"mcu_temperature\stm32f1xx_hal_flash.o"
+"mcu_temperature\stm32f1xx_hal_gpio_ex.o"
+"mcu_temperature\stm32f1xx_hal.o"
+"mcu_temperature\stm32f1xx_hal_rcc.o"
+"mcu_temperature\stm32f1xx_hal_tim.o"
+"mcu_temperature\stm32f1xx_hal_cortex.o"
+"mcu_temperature\stm32f1xx_hal_dma.o"
+"mcu_temperature\stm32f1xx_hal_pwr.o"
+"mcu_temperature\stm32f1xx_hal_rcc_ex.o"
+--library_type=microlib --nodebug --strict --scatter "MCU_Temperature\MCU_Temperature.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MCU_Temperature.map" -o MCU_Temperature\MCU_Temperature.axf

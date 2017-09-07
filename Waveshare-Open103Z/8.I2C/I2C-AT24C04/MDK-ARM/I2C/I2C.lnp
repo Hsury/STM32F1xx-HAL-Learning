@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"i2c\startup_stm32f103xe.o"
+"i2c\stm32f1xx_hal_rcc.o"
+"i2c\stm32f1xx_hal_cortex.o"
+"i2c\stm32f1xx_hal.o"
+"i2c\stm32f1xx_hal_i2c.o"
+"i2c\stm32f1xx_hal_gpio.o"
+"i2c\stm32f1xx_hal_dma.o"
+"i2c\stm32f1xx_hal_pwr.o"
+"i2c\stm32f1xx_hal_tim_ex.o"
+"i2c\stm32f1xx_hal_flash.o"
+"i2c\stm32f1xx_hal_flash_ex.o"
+"i2c\stm32f1xx_hal_uart.o"
+"i2c\stm32f1xx_hal_gpio_ex.o"
+"i2c\stm32f1xx_hal_rcc_ex.o"
+"i2c\stm32f1xx_hal_tim.o"
+"i2c\usart.o"
+"i2c\main.o"
+"i2c\gpio.o"
+"i2c\i2c.o"
+"i2c\stm32f1xx_hal_msp.o"
+"i2c\stm32f1xx_it.o"
+"i2c\system_stm32f1xx.o"
+--library_type=microlib --nodebug --strict --scatter "I2C\I2C.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "I2C.map" -o I2C\I2C.axf

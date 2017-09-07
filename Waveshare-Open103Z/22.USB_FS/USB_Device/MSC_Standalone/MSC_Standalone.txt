@@ -1,0 +1,62 @@
+Configuration	MSC_Standalone
+STM32CubeMX 	4.19.0
+Date	02/20/2017
+MCU	STM32F103ZETx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+RCC	Crystal/Ceramic Resonator	RCC_OSC_IN	OSC_IN
+RCC	Crystal/Ceramic Resonator	RCC_OSC_OUT	OSC_OUT
+SDIO	SD 4 bits Wide bus	SDIO_CK	PC12
+SDIO	SD 4 bits Wide bus	SDIO_CMD	PD2
+SDIO	SD 4 bits Wide bus	SDIO_D0	PC8
+SDIO	SD 4 bits Wide bus	SDIO_D1	PC9
+SDIO	SD 4 bits Wide bus	SDIO_D2	PC10
+SDIO	SD 4 bits Wide bus	SDIO_D3	PC11
+SYS	No Debug	SYS_VS_ND	VP_SYS_VS_ND
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+USB	Device (FS)	USB_DM	PA11
+USB	Device (FS)	USB_DP	PA12
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+23	OSC_IN	RCC_OSC_IN	
+24	OSC_OUT	RCC_OSC_OUT	
+98	PC8	SDIO_D0	
+99	PC9	SDIO_D1	
+103	PA11	USB_DM	
+104	PA12	USB_DP	
+111	PC10	SDIO_D2	
+112	PC11	SDIO_D3	
+113	PC12	SDIO_CK	
+116	PD2	SDIO_CMD	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : MSC_Standalone
+Project Folder : E:\Open103Z-Demo-HAL\22.USB_FS\USB_Device\MSC_Standalone
+Toolchain / IDE : MDK-ARM V5
+Firmware Package Name and Version : STM32Cube FW_F1 V1.4.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy all used libraries into the project folder
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : Yes
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : Balanced Size/Speed
+
+
+
+
+
+

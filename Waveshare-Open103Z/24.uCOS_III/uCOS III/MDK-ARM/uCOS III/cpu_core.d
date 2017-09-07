@@ -1,0 +1,11 @@
+ucos iii\cpu_core.o: ..\uCOS-III\uC-CPU\cpu_core.c
+ucos iii\cpu_core.o: ..\uCOS-III\uC-CPU\cpu_core.h
+ucos iii\cpu_core.o: ..\uCOS-III\uC-CPU\cpu.h
+ucos iii\cpu_core.o: ..\uCOS-III\uC-CPU\cpu_def.h
+ucos iii\cpu_core.o: ..\uCOS-III\uC-CPU\cpu_cfg.h
+ucos iii\cpu_core.o: ..\uCOS-III\uC-LIB\lib_def.h
+ucos iii\cpu_core.o: ..\uCOS-III\uC-LIB\lib_mem.h
+ucos iii\cpu_core.o: ..\uCOS-III\uC-CPU\cpu_core.h
+ucos iii\cpu_core.o: ../Inc/app_cfg.h
+ucos iii\cpu_core.o: ..\uCOS-III\uC-LIB\lib_str.h
+ucos iii\cpu_core.o: ..\uCOS-III\uC-LIB\lib_ascii.h

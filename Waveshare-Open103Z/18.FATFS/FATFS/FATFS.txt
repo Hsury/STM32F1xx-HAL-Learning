@@ -1,0 +1,58 @@
+Configuration	FATFS
+STM32CubeMX 	4.17.0
+Date	12/14/2016
+MCU	STM32F103ZETx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SDIO	SD 4 bits Wide bus	SDIO_CK	PC12
+SDIO	SD 4 bits Wide bus	SDIO_CMD	PD2
+SDIO	SD 4 bits Wide bus	SDIO_D0	PC8
+SDIO	SD 4 bits Wide bus	SDIO_D1	PC9
+SDIO	SD 4 bits Wide bus	SDIO_D2	PC10
+SDIO	SD 4 bits Wide bus	SDIO_D3	PC11
+SYS	No Debug	SYS_VS_ND	VP_SYS_VS_ND
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+USART1	Asynchronous	USART1_RX	PA10
+USART1	Asynchronous	USART1_TX	PA9
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+98	PC8	SDIO_D0	
+99	PC9	SDIO_D1	
+101	PA9	USART1_TX	
+102	PA10	USART1_RX	
+111	PC10	SDIO_D2	
+112	PC11	SDIO_D3	
+113	PC12	SDIO_CK	
+116	PD2	SDIO_CMD	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : FATFS
+Project Folder : D:\Open103Z-Demo-HAL\18.FATFS\FATFS
+Toolchain / IDE : MDK-ARM V5
+Firmware Package Name and Version : STM32Cube FW_F1 V1.4.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy all used libraries into the project folder
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : Yes
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : Balanced Size/Speed
+
+
+
+
+
+

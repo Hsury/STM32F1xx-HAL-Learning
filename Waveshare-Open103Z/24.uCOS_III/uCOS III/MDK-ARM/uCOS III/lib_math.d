@@ -1,0 +1,12 @@
+ucos iii\lib_math.o: ..\uCOS-III\uC-LIB\lib_math.c
+ucos iii\lib_math.o: ..\uCOS-III\uC-LIB\lib_math.h
+ucos iii\lib_math.o: ..\uCOS-III\uC-CPU\cpu.h
+ucos iii\lib_math.o: ..\uCOS-III\uC-CPU\cpu_def.h
+ucos iii\lib_math.o: ..\uCOS-III\uC-CPU\cpu_cfg.h
+ucos iii\lib_math.o: ..\uCOS-III\uC-CPU\cpu_core.h
+ucos iii\lib_math.o: ..\uCOS-III\uC-LIB\lib_def.h
+ucos iii\lib_math.o: ..\uCOS-III\uC-LIB\lib_mem.h
+ucos iii\lib_math.o: ..\uCOS-III\uC-CPU\cpu_core.h
+ucos iii\lib_math.o: ../Inc/app_cfg.h
+ucos iii\lib_math.o: ..\uCOS-III\uC-LIB\lib_str.h
+ucos iii\lib_math.o: ..\uCOS-III\uC-LIB\lib_ascii.h

@@ -1,0 +1,44 @@
+Configuration	EXTI
+STM32CubeMX 	4.17.0
+Date	12/10/2016
+MCU	STM32F103ZETx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SYS	No Debug	SYS_VS_ND	VP_SYS_VS_ND
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+18	PF6	GPIO_Output	LED1
+91	PG6	GPIO_EXTI6	USERKEY
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : EXTI
+Project Folder : D:\Open103Z-Demo-HAL\2.EXTI\EXTI
+Toolchain / IDE : MDK-ARM V5
+Firmware Package Name and Version : STM32Cube FW_F1 V1.4.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy all used libraries into the project folder
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : Yes
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : Balanced Size/Speed
+
+
+
+
+
+

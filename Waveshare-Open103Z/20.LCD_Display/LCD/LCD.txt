@@ -1,0 +1,92 @@
+Configuration	LCD
+STM32CubeMX 	4.17.0
+Date	12/07/2016
+MCU	STM32F103ZETx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+FSMC:NOR Flash/PSRAM/SRAM/ROM/LCD 1	NE4	FSMC_NE4	PG12
+FSMC:NOR Flash/PSRAM/SRAM/ROM/LCD 1	LCD Interface	FSMC_NOE	PD4
+FSMC:NOR Flash/PSRAM/SRAM/ROM/LCD 1	LCD Interface	FSMC_NWE	PD5
+FSMC:NOR Flash/PSRAM/SRAM/ROM/LCD 1	A15	FSMC_A15	PG5
+FSMC:NOR Flash/PSRAM/SRAM/ROM/LCD 1	16 bits	FSMC_D0	PD14
+FSMC:NOR Flash/PSRAM/SRAM/ROM/LCD 1	16 bits	FSMC_D1	PD15
+FSMC:NOR Flash/PSRAM/SRAM/ROM/LCD 1	16 bits	FSMC_D2	PD0
+FSMC:NOR Flash/PSRAM/SRAM/ROM/LCD 1	16 bits	FSMC_D3	PD1
+FSMC:NOR Flash/PSRAM/SRAM/ROM/LCD 1	16 bits	FSMC_D4	PE7
+FSMC:NOR Flash/PSRAM/SRAM/ROM/LCD 1	16 bits	FSMC_D5	PE8
+FSMC:NOR Flash/PSRAM/SRAM/ROM/LCD 1	16 bits	FSMC_D6	PE9
+FSMC:NOR Flash/PSRAM/SRAM/ROM/LCD 1	16 bits	FSMC_D7	PE10
+FSMC:NOR Flash/PSRAM/SRAM/ROM/LCD 1	16 bits	FSMC_D8	PE11
+FSMC:NOR Flash/PSRAM/SRAM/ROM/LCD 1	16 bits	FSMC_D9	PE12
+FSMC:NOR Flash/PSRAM/SRAM/ROM/LCD 1	16 bits	FSMC_D10	PE13
+FSMC:NOR Flash/PSRAM/SRAM/ROM/LCD 1	16 bits	FSMC_D11	PE14
+FSMC:NOR Flash/PSRAM/SRAM/ROM/LCD 1	16 bits	FSMC_D12	PE15
+FSMC:NOR Flash/PSRAM/SRAM/ROM/LCD 1	16 bits	FSMC_D13	PD8
+FSMC:NOR Flash/PSRAM/SRAM/ROM/LCD 1	16 bits	FSMC_D14	PD9
+FSMC:NOR Flash/PSRAM/SRAM/ROM/LCD 1	16 bits	FSMC_D15	PD10
+RCC	Crystal/Ceramic Resonator	RCC_OSC_IN	OSC_IN
+RCC	Crystal/Ceramic Resonator	RCC_OSC_OUT	OSC_OUT
+SYS	No Debug	SYS_VS_ND	VP_SYS_VS_ND
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+1	PE2	GPIO_Output	A23
+23	OSC_IN	RCC_OSC_IN	
+24	OSC_OUT	RCC_OSC_OUT	
+44	PC4	GPIO_Output	LCDTP_CS
+45	PC5	GPIO_Input	LCDTP_IRQ
+46	PB0	GPIO_Output	BL_PWM
+47	PB1	GPIO_Output	LCD_RESET
+58	PE7	FSMC_D4	
+59	PE8	FSMC_D5	
+60	PE9	FSMC_D6	
+63	PE10	FSMC_D7	
+64	PE11	FSMC_D8	
+65	PE12	FSMC_D9	
+66	PE13	FSMC_D10	
+67	PE14	FSMC_D11	
+68	PE15	FSMC_D12	
+77	PD8	FSMC_D13	
+78	PD9	FSMC_D14	
+79	PD10	FSMC_D15	
+85	PD14	FSMC_D0	
+86	PD15	FSMC_D1	
+90	PG5	FSMC_A15	
+114	PD0	FSMC_D2	
+115	PD1	FSMC_D3	
+118	PD4	FSMC_NOE	
+119	PD5	FSMC_NWE	
+127	PG12	FSMC_NE4	
+128	PG13	GPIO_Output	A24
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : LCD
+Project Folder : D:\Open103Z-Demo-HAL\20.LCD_Display - ¸±±¾\LCD
+Toolchain / IDE : MDK-ARM V5
+Firmware Package Name and Version : STM32Cube FW_F1 V1.4.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy all used libraries into the project folder
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : Yes
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : Balanced Size/Speed
+
+
+
+
+
+

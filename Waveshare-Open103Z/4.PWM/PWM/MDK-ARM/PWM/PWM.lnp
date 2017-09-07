@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"pwm\stm32f1xx_hal_tim_ex.o"
+"pwm\stm32f1xx_hal_flash_ex.o"
+"pwm\stm32f1xx_hal_tim.o"
+"pwm\stm32f1xx_hal_gpio_ex.o"
+"pwm\stm32f1xx_hal_rcc_ex.o"
+"pwm\stm32f1xx_hal.o"
+"pwm\stm32f1xx_hal_dma.o"
+"pwm\stm32f1xx_hal_rcc.o"
+"pwm\stm32f1xx_hal_cortex.o"
+"pwm\stm32f1xx_hal_pwr.o"
+"pwm\stm32f1xx_hal_flash.o"
+"pwm\stm32f1xx_hal_gpio.o"
+"pwm\gpio.o"
+"pwm\stm32f1xx_it.o"
+"pwm\tim.o"
+"pwm\stm32f1xx_hal_msp.o"
+"pwm\main.o"
+"pwm\system_stm32f1xx.o"
+"pwm\startup_stm32f103xe.o"
+--library_type=microlib --nodebug --strict --scatter "PWM\PWM.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PWM.map" -o PWM\PWM.axf

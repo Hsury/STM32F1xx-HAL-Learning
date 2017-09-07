@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"tim\stm32f1xx_hal.o"
+"tim\stm32f1xx_hal_cortex.o"
+"tim\stm32f1xx_hal_rcc.o"
+"tim\stm32f1xx_hal_dma.o"
+"tim\stm32f1xx_hal_pwr.o"
+"tim\stm32f1xx_hal_gpio.o"
+"tim\stm32f1xx_hal_tim_ex.o"
+"tim\stm32f1xx_hal_flash.o"
+"tim\stm32f1xx_hal_flash_ex.o"
+"tim\stm32f1xx_hal_rcc_ex.o"
+"tim\stm32f1xx_hal_tim.o"
+"tim\stm32f1xx_hal_gpio_ex.o"
+"tim\startup_stm32f103xe.o"
+"tim\tim.o"
+"tim\stm32f1xx_hal_msp.o"
+"tim\main.o"
+"tim\gpio.o"
+"tim\stm32f1xx_it.o"
+"tim\system_stm32f1xx.o"
+--library_type=microlib --nodebug --strict --scatter "TIM\TIM.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TIM.map" -o TIM\TIM.axf

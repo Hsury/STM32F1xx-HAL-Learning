@@ -1,0 +1,44 @@
+Configuration	PWM
+STM32CubeMX 	4.17.0
+Date	11/10/2016
+MCU	STM32F103ZETx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SYS	No Debug	SYS_VS_ND	VP_SYS_VS_ND
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TIM4	PWM Generation CH1	TIM4_CH1	PD12
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+81	PD12	TIM4_CH1	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : PWM
+Project Folder : D:\Open103Z-Demo-HAL\4.PWM
+Toolchain / IDE : MDK-ARM V5
+Firmware Package Name and Version : STM32Cube FW_F1 V1.4.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy all used libraries into the project folder
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : Yes
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : Balanced Size/Speed
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"gpio\startup_stm32f103xe.o"
+"gpio\stm32f1xx_hal_cortex.o"
+"gpio\stm32f1xx_hal_dma.o"
+"gpio\stm32f1xx_hal_tim_ex.o"
+"gpio\stm32f1xx_hal_pwr.o"
+"gpio\stm32f1xx_hal_gpio_ex.o"
+"gpio\stm32f1xx_hal_gpio.o"
+"gpio\stm32f1xx_hal_tim.o"
+"gpio\stm32f1xx_hal_rcc.o"
+"gpio\stm32f1xx_hal_flash.o"
+"gpio\stm32f1xx_hal_flash_ex.o"
+"gpio\stm32f1xx_hal.o"
+"gpio\stm32f1xx_hal_rcc_ex.o"
+"gpio\system_stm32f1xx.o"
+"gpio\main.o"
+"gpio\stm32f1xx_it.o"
+"gpio\gpio.o"
+"gpio\stm32f1xx_hal_msp.o"
+--library_type=microlib --nodebug --strict --scatter "GPIO\GPIO.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GPIO.map" -o GPIO\GPIO.axf

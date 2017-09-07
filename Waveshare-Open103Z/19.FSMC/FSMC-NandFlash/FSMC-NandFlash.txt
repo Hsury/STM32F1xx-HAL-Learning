@@ -1,0 +1,78 @@
+Configuration	FSMC-NandFlash
+STM32CubeMX 	4.19.0
+Date	03/14/2017
+MCU	STM32F103ZETx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+FSMC:NAND Flash 1	NCE2	FSMC_NCE2	PD7
+FSMC:NAND Flash 1	8 bits	FSMC_D0	PD14
+FSMC:NAND Flash 1	8 bits	FSMC_D1	PD15
+FSMC:NAND Flash 1	8 bits	FSMC_D2	PD0
+FSMC:NAND Flash 1	8 bits	FSMC_D3	PD1
+FSMC:NAND Flash 1	8 bits	FSMC_D4	PE7
+FSMC:NAND Flash 1	8 bits	FSMC_D5	PE8
+FSMC:NAND Flash 1	8 bits	FSMC_D6	PE9
+FSMC:NAND Flash 1	8 bits	FSMC_D7	PE10
+FSMC:NAND Flash 1	8 bits	FSMC_ALE	PD12
+FSMC:NAND Flash 1	8 bits	FSMC_CLE	PD11
+FSMC:NAND Flash 1	8 bits	FSMC_NOE	PD4
+FSMC:NAND Flash 1	8 bits	FSMC_NWE	PD5
+FSMC:NAND Flash 1	NWAIT	FSMC_NWAIT	PD6
+RCC	Crystal/Ceramic Resonator	RCC_OSC_IN	OSC_IN
+RCC	Crystal/Ceramic Resonator	RCC_OSC_OUT	OSC_OUT
+SYS	No Debug	SYS_VS_ND	VP_SYS_VS_ND
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+USART1	Asynchronous	USART1_RX	PA10
+USART1	Asynchronous	USART1_TX	PA9
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+23	OSC_IN	RCC_OSC_IN	
+24	OSC_OUT	RCC_OSC_OUT	
+58	PE7	FSMC_D4	
+59	PE8	FSMC_D5	
+60	PE9	FSMC_D6	
+63	PE10	FSMC_D7	
+80	PD11	FSMC_CLE	
+81	PD12	FSMC_ALE	
+85	PD14	FSMC_D0	
+86	PD15	FSMC_D1	
+101	PA9	USART1_TX	
+102	PA10	USART1_RX	
+114	PD0	FSMC_D2	
+115	PD1	FSMC_D3	
+118	PD4	FSMC_NOE	
+119	PD5	FSMC_NWE	
+122	PD6	FSMC_NWAIT	
+123	PD7	FSMC_NCE2	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : FSMC-NandFlash
+Project Folder : E:\Open103Z-Demo-HAL\19.FSMC\FSMC-NandFlash
+Toolchain / IDE : MDK-ARM V5
+Firmware Package Name and Version : STM32Cube FW_F1 V1.4.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy all used libraries into the project folder
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : Yes
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : Balanced Size/Speed
+
+
+
+
+
+

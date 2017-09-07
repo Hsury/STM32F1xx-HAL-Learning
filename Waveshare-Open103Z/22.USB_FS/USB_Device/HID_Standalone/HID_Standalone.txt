@@ -1,0 +1,55 @@
+Configuration	HID_Standalone
+STM32CubeMX 	4.17.0
+Date	12/12/2016
+MCU	STM32F103ZETx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+RCC	Crystal/Ceramic Resonator	RCC_OSC_IN	OSC_IN
+RCC	Crystal/Ceramic Resonator	RCC_OSC_OUT	OSC_OUT
+SYS	No Debug	SYS_VS_ND	VP_SYS_VS_ND
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+USB	Device (FS)	USB_DM	PA11
+USB	Device (FS)	USB_DP	PA12
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+23	OSC_IN	RCC_OSC_IN	
+24	OSC_OUT	RCC_OSC_OUT	
+26	PC0	GPIO_Input	RIGHT
+27	PC1	GPIO_Input	UP
+28	PC2	GPIO_Input	DOWN
+29	PC3	GPIO_Input	LEFT
+93	PG8	GPIO_Input	CTR
+103	PA11	USB_DM	
+104	PA12	USB_DP	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : HID_Standalone
+Project Folder : D:\Open103Z-Demo-HAL\22.USB_FS\USB_Device\HID_Standalone
+Toolchain / IDE : MDK-ARM V5
+Firmware Package Name and Version : STM32Cube FW_F1 V1.4.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy all used libraries into the project folder
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : Yes
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : Balanced Size/Speed
+
+
+
+
+
+

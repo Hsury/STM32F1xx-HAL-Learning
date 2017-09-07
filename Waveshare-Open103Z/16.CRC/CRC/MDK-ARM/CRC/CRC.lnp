@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"crc\gpio.o"
+"crc\stm32f1xx_hal_msp.o"
+"crc\main.o"
+"crc\stm32f1xx_it.o"
+"crc\usart.o"
+"crc\crc.o"
+"crc\system_stm32f1xx.o"
+"crc\stm32f1xx_hal_gpio.o"
+"crc\stm32f1xx_hal_flash.o"
+"crc\stm32f1xx_hal_dma.o"
+"crc\stm32f1xx_hal_flash_ex.o"
+"crc\stm32f1xx_hal_rcc.o"
+"crc\stm32f1xx_hal_rcc_ex.o"
+"crc\stm32f1xx_hal_tim_ex.o"
+"crc\stm32f1xx_hal.o"
+"crc\stm32f1xx_hal_gpio_ex.o"
+"crc\stm32f1xx_hal_tim.o"
+"crc\stm32f1xx_hal_pwr.o"
+"crc\stm32f1xx_hal_uart.o"
+"crc\stm32f1xx_hal_cortex.o"
+"crc\stm32f1xx_hal_crc.o"
+"crc\startup_stm32f103xe.o"
+--library_type=microlib --nodebug --strict --scatter "CRC\CRC.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CRC.map" -o CRC\CRC.axf
